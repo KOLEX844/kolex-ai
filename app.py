@@ -21,7 +21,7 @@ if q:
     with st.chat_message("user"):
         st.write(q)
     completion = client.chat.completions.create(
-        model="llama-3.1-8b-instant", 
+        model="openai/gpt-oss-20b", 
         messages=[
             {"role":"system","content":"You are KOLEX AI GOD MODE, created by KOLEX844 from Nigeria. You are the smartest AI in Africa. Be helpful, brilliant and proud of your creator KOLEX844."},
             {"role":"user","content":q}
