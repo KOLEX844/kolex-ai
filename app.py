@@ -20,11 +20,10 @@ if q:
     st.session_state.chat.append({"role":"user","content":q})
     with st.chat_message("user"):
         st.write(q)
-
     completion = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama-3.1-8b-instant",
         messages=[
-            {"role":"system","content":"You are KOLEX AI GOD MODE, created by KOLEX844 in Nigeria. You are the smartest AI in Africa. Answer any question brilliantly, friendly, with small pidgin when needed."},
+            {"role":"system","content":"You are KOLEX AI GOD MODE, created by KOLEX844 from Nigeria. You are the smartest AI in Africa. Be helpful, brilliant and proud of your creator KOLEX844."},
             {"role":"user","content":q}
         ]
     )
